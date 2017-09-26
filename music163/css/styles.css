@@ -1,0 +1,213 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/* @font-face {
+  font-family: 'Helvetica';
+  src: url('../font/bb1895/HELVETI1.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+#head {
+  width: 100%;
+  color: #ccc;
+  font-family: Helvetica, sans-serif;
+  background: #282828;
+}
+#head #m_top {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 70px;
+}
+#m_top li,
+#m_top ul {
+  height: 70px;
+  line-height: 70px;
+  font-size: 0;
+  -webkit-text-size-adjust: none;
+  display: inline-block;
+  list-style: none;
+}
+#head .left_nav {
+  position: absolute;
+  left: 0;
+}
+#head .left_nav li {
+  position: relative;
+}
+#head .left_nav .title {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  padding-right: 20px;
+}
+#head .left_nav .choices,
+#head .left_nav .lastch {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0px 20px;
+  font-size: 14px;
+  line-height: 70px;
+  color: #ccc;
+}
+#head .left_nav .choices:hover,
+#head .left_nav .lastch:hover {
+  background: #000000;
+}
+#head .left_nav .triangle-up {
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 6px solid #c70c0c;
+}
+/*#head .left_nav .choices{
+  border-right: 1px solid black;
+}*/
+#head .right_nav {
+  position: absolute;
+  right: 0;
+}
+#head .login_options {
+  height: 70px;
+  line-height: 70px;
+  padding: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#head .search_input {
+  -web-kit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+  height: 30px;
+  line-height: 30px;
+  width: 210px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+#head #g_top {
+  height: 35px;
+  width: 100%;
+  background: -webkit-linear-gradient(#c70c0c, #980808);
+  /* border: 1px solid black; */
+  /* background: pink; */
+}
+#main {
+  background-color: red;
+  height: 300px;
+}
+#foot {
+  width: 100%;
+  height: 200px;
+  background-color: blue;
+}
+#recommend_area {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#recommend_area .rec_nav {
+  width: 100%;
+  height: 33px;
+  position: relative;
+  border-bottom: 2px solid #c70c0c;
+  color: #666;
+  font-family: Helvetica, sans-serif;
+}
+#recommend_area .rec_nav div {
+  display: inline-block;
+}
+#recommend_area .rec_nav a {
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: top;
+  display: inline-block;
+  height: 33px;
+  line-height: 33px;
+}
+#recommend_area .rec_nav .nav_left {
+  height: 33px;
+  line-height: 33px;
+  position: absolute;
+  left: 0px;
+}
+#recommend_area .rec_nav .nav_left .nav_title {
+  font-size: 20px;
+  padding-right: 20px;
+  color: #000000;
+}
+#recommend_area .rec_nav .nav_left .line {
+  padding: 0 10px;
+}
+#recommend_area .rec_nav .nav_right {
+  height: 33px;
+  line-height: 33px;
+  position: absolute;
+  right: 0px;
+}
+#recommend_area .rec_nav .nav_right .rec_more {
+  color: #666;
+}
+#recommend_area #rec_list_content {
+  margin-top: 20px;
+  font-size: 0;
+  overflow: auto;
+  margin-left: -52px;
+}
+#recommend_area #rec_list_content a {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+#recommend_area #rec_list_content .rec_item {
+  float: left;
+  display: inline-block;
+  padding-left: 52px;
+  padding-bottom: 30px;
+}
+#recommend_area #rec_list_content .rec_item .rec_cover {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#recommend_area #rec_list_content .rec_item .rec_cover .rec_img {
+  width: 100%;
+  height: 100%;
+}
+#recommend_area #rec_list_content .rec_item .rec_cover .bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 27px;
+  background-color: #282828;
+  opacity: 0.6;
+  border-top: 1px solid black;
+}
+#recommend_area #rec_list_content .rec_item .rec_describe {
+  width: 140px;
+  height: 60px;
+  margin-top: 4px;
+}
+#recommend_area #rec_list_content .rec_item .rec_title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
